@@ -1,5 +1,5 @@
-# Cuerava-Illuga
-Cuerava love Illuga
+# Cueravanator
+Cuerava loves Illuga
 
 Illuga is Cuerava's top pick for the cutest and most sexiest man on earth. It is said that she does a prayer in his name all 20 minutes (which is a bit excessive but I digress).
 
