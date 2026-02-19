@@ -184,11 +184,14 @@ body {
 
 .carousel {
   position: relative;
+  overflow: hidden;
+  max-height: 500px; /* optional: limit carousel height */
 }
 
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease;
+  width: 100%;
 }
 
 .carousel-track img {
@@ -268,7 +271,7 @@ body {
 }
 
 .carousel-slide {
-  min-width: 100%;
+  flex: 0 0 100%; /* Each slide takes 100% width */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,6 +279,58 @@ body {
 
 .carousel-slide img {
   max-width: 100%;
-  max-height: 500px;
+  max-height: 500px; /* optional: limits very tall images */
   object-fit: contain;
+  display: block;
+}
+
+/* HEART CLICK SECTION */
+.heart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background: #f9fafb;
+  position: relative;
+}
+
+.heart-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.clickable-image {
+  max-width: 300px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.clickable-image:hover {
+  transform: scale(1.05);
+}
+
+/* Heart animation */
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="red" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+  /* background-image: url('/assets/illugaen.png'); */
+  background-size: cover;
+  pointer-events: none;
+  animation: heart-fade 1s forwards;
+}
+
+@keyframes heart-fade {
+  0% {
+    transform: translate(0,0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(1.5);
+    opacity: 0;
+  }
 }
