@@ -8,6 +8,7 @@ function updateCarousel() {
   track.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
+
 nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slides.length;
   updateCarousel();
