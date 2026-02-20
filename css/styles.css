@@ -717,3 +717,18 @@ body {
   font-weight: 600;
   opacity: 0.8;
 }
+
+.featured-review {
+  border: 3px solid #ff758c;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  transform: scale(1.05);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255,117,140,0.3);
+  grid-column: span 2;
+}
+
+.featured-review:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(255,117,140,0.5);
+}
