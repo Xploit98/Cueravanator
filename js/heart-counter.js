@@ -4,6 +4,7 @@ const milestoneMessage = document.getElementById('milestone-message');
 const clickSound = new Audio('../assets/sounds/click.mp3');
 const milestoneSound = new Audio('../assets/sounds/rizz.mp3');
 const fireworkSound = new Audio('../assets/sounds/firework.mp3');
+const LightCompel = new Audio('../assets/sounds/LightCompel.mp3');
 
 let heartCount = 0;
 let milestoneTimeout; // store timeout so we can reset it
@@ -65,6 +66,8 @@ function createFireworks() {
 
     fireworkSound.currentTime = 0;
     fireworkSound.play();
+    LightCompel.currentTime = 0;
+    LightCompel.play();
   for (let i = 0; i < 10; i++) {
     const firework = document.createElement('div');
     firework.classList.add('firework');
