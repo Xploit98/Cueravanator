@@ -85,8 +85,8 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: white;
-  color: #2563eb;
+  background: #2f2828;
+  color: #D4A25A;
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
@@ -125,7 +125,7 @@ body {
 }
 
 .card {
-  background: white;
+  background: #685f62;
   padding: 30px;
   border-radius: 12px;
   flex: 1 1 280px;
@@ -140,7 +140,11 @@ body {
 
 .card h3 {
   margin-bottom: 15px;
-  color: #2563eb;
+  color: #D4A25A;
+}
+
+.card p {
+  color: #D4A25A;
 }
 
 /* CTA */
