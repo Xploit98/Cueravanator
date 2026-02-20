@@ -630,6 +630,28 @@ body {
   color: #ef4444; /* red accent for titles */
 }
 
+.about-video-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* adjust max width */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: black; /* in case video doesn’t fill */
+}
+
 /* Testimonials Section */
 .testimonials {
   padding: 80px 8%;
