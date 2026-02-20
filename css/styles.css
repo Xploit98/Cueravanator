@@ -85,8 +85,8 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: white;
-  color: #2563eb;
+  background: #2f2828;
+  color: #D4A25A;
   font-weight: 600;
   border-radius: 8px;
   text-decoration: none;
@@ -110,11 +110,13 @@ body {
 .features {
   padding: 80px 8%;
   text-align: center;
+  background-color: #685f62;
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 50px;
+  color: white;
 }
 
 .feature-grid {
@@ -125,7 +127,7 @@ body {
 }
 
 .card {
-  background: white;
+  background: #2f2828;
   padding: 30px;
   border-radius: 12px;
   flex: 1 1 280px;
@@ -140,7 +142,11 @@ body {
 
 .card h3 {
   margin-bottom: 15px;
-  color: #2563eb;
+  color: #D4A25A;
+}
+
+.card p {
+  color: white;
 }
 
 /* CTA */
@@ -156,8 +162,8 @@ body {
 }
 
 .cta .btn {
-  background: #2563eb;
-  color: white;
+  background: #2f2828;
+  color: #D4A25A;
 }
 
 /* FOOTER */
@@ -329,13 +335,31 @@ body {
 }
 
 /* HEART CLICK SECTION */
+/* HEART SECTION - CENTER EVERYTHING */
 .heart-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  background: #f9fafb;
+  flex-direction: column;  /* stack h1, p, and image vertically */
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  height: 80vh;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
   position: relative;
+  overflow: hidden;
+  text-align: center;      /* center h1 and p text */
+  padding: 20px;
+}
+
+.heart-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ef4444;
+}
+
+.heart-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #374151;
+  max-width: 500px; /* optional: prevents text being too wide on large screens */
 }
 
 .heart-container {
@@ -514,4 +538,219 @@ body {
 
 .gallery-grid img:hover {
   transform: scale(1.05);
+}
+.heart-counter {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(255,255,255,0.9); */
+  font-size: 1.2rem;
+  color: #111827;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  color: #ef4444;
+}
+
+.heart-counter.bump {
+  transform: scale(1.3);
+}
+
+/* Milestone pop-up - improved readability */
+.milestone-message {
+  position: absolute;
+  top: -50px;                /* above image */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  /* Change to readable colors */
+  color: #ffffff;            /* white text */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* subtle shadow for contrast */
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  text-align: center;
+  padding: 5px 15px;         /* optional padding */
+  border-radius: 12px;       /* optional rounded edges */
+  background: rgba(0,0,0,0.4); /* semi-transparent dark background behind text */
+}
+
+.milestone-message.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-20px);
+}
+
+@keyframes fireworks {
+  0% { transform: scale(0.5) rotate(0deg); opacity: 1; }
+  100% { transform: scale(1.5) rotate(360deg); opacity: 0; }
+}
+
+.firework {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #f59e0b, #ef4444);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fireworks 0.8s ease-out forwards;
+}
+
+/* Video Section */
+.video-section {
+  padding: 60px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe4e6, #fcd5d5); /* your pink theme */
+  border-radius: 16px;
+}
+
+/* Video Container */
+.video-container {
+  width: 100%;
+  max-width: 900px;      /* controls width */
+  aspect-ratio: 16 / 9;  /* keeps proper ratio */
+  max-height: 500px;     /* prevents ultra-wide from getting too tall */
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: #000; /* fallback background behind video */
+}
+
+/* iframe fills container */
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-section .section-title {
+  color: #ef4444; /* red accent for titles */
+}
+
+.about-video-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* adjust max width */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: black; /* in case video doesn’t fill */
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, #ffe4e6, #fcd5d5);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+.stars {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.section-title-test {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #ef4444; /* red accent for titles */
+}
+
+.section-title-about {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #ef4444; /* red accent for titles */
+}
+
+/* Statistics Section */
+.statistics {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #ffe4e6, #fcd5d5);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+}
+
+.stat-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.featured-review {
+  border: 3px solid #ff758c;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  transform: scale(1.05);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(255,117,140,0.3);
+  grid-column: span 2;
+}
+
+.featured-review:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(255,117,140,0.5);
 }
