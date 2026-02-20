@@ -515,3 +515,19 @@ body {
 .gallery-grid img:hover {
   transform: scale(1.05);
 }
+.heart-counter {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background: rgba(255,255,255,0.9); */
+  font-size: 1.2rem;
+  color: #111827;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  color: #ef4444;
+}
+
+.heart-counter.bump {
+  transform: scale(1.3);
+}
