@@ -2,7 +2,7 @@ const clickableImage = document.querySelector('.clickable-image');
 const counter = document.getElementById('heart-counter');
 const milestoneMessage = document.getElementById('milestone-message');
 const clickSound = new Audio('../assets/sounds/click.mp3');
-const milestoneSound = new Audio('../assets/sounds/milestone.mp3');
+const milestoneSound = new Audio('../assets/sounds/rizz.mp3');
 const fireworkSound = new Audio('../assets/sounds/firework.mp3');
 
 let heartCount = 0;
