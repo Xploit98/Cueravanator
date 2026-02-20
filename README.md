@@ -1,4 +1,10 @@
 # Cueravanator
+# ⚠️ DISCLAIMER: THIS REPOSITORY IS A JOKE / SATIRE ⚠️
+
+**This project is entirely humorous and not meant to be taken seriously.  
+Any claims, praises, or stories about Illuga are purely fictional and for entertainment purposes.**
+
+---
 Cuerava loves Illuga
 
 Illuga is Cuerava's top pick for the cutest and most sexiest man on earth. It is said that she does a prayer in his name all 20 minutes (which is a bit excessive but I digress).
@@ -24,3 +30,4 @@ And warriors bound to earth and oath
 Still find a heart they’re sworn to keep.
 
 or smth
+> *Seriously. Don’t take this repo seriously. This is satire.*  

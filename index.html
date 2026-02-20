@@ -1,70 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Flexbox Template</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">Illuga enjoyer</div>
-    <div class="nav-links">
-      <a href="./index.html">Home</a>
-      <a href="./html/gallery.html">Gallery</a>
-      <a href="./html/heart-click.html">Heart to Heart</a>
-      <a href="#">Contact</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Build Something Modern</h1>
-      <p>A clean and flexible starter template using CSS Flexbox to jumpstart your next project.</p>
-      <a href="#" class="btn">Get Started</a>
-    </div>
-    <div class="hero-image">
-      <img src="./assets/illugaen.png" alt="Hero Image">
-    </div>
-  </section>
-
-  <!-- FEATURES -->
-  <section class="features">
-    <h2 class="section-title">Features</h2>
-    <div class="feature-grid">
-      <div class="card">
-        <h3>Responsive</h3>
-        <p>Built with Flexbox for fully responsive layouts across all screen sizes.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Flexbox Template</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Illuga enjoyer logo">
       </div>
-      <div class="card">
-        <h3>Modern UI</h3>
-        <p>Clean typography, soft shadows, and smooth hover transitions.</p>
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="card">
-        <h3>Easy to Customize</h3>
-        <p>Simple structure so you can quickly build and expand.</p>
+      <div class="nav-links" id="navLinks">
+        <a href="./index.html">Home</a>
+        <a href="./html/gallery.html">Gallery</a>
+        <a href="./html/heart-click.html">Heart to Heart</a>
+        <a href="https://keqingmains.com/q/illuga-quickguide/">KQM Guide</a>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Ready to Start?</h2>
-    <a href="#" class="btn">Create Your Project</a>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    © 2026 YourBrand. All rights reserved.
-  </footer>
-
-</body>
+    </nav>
+    <script defer src="./js/navbar.js"></script>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Build Something Modern</h1>
+        <p>A clean and flexible starter template using CSS Flexbox to jumpstart your next project.</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+      <div class="hero-image">
+        <img src="./assets/illugaen.png" alt="Hero Image">
+      </div>
+    </section>
+    <!-- FEATURES -->
+    <section class="features">
+      <h2 class="section-title">Features</h2>
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Responsive</h3>
+          <p>Built with Flexbox for fully responsive layouts across all screen sizes.</p>
+        </div>
+        <div class="card">
+          <h3>Modern UI</h3>
+          <p>Clean typography, soft shadows, and smooth hover transitions.</p>
+        </div>
+        <div class="card">
+          <h3>Easy to Customize</h3>
+          <p>Simple structure so you can quickly build and expand.</p>
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Ready to Start?</h2>
+      <a href="#" class="btn">Create Your Project</a>
+    </section>
+    <!-- REVIEWS -->
+    <section class="reviews">
+      <h2 class="section-title rev-title">What People Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"I opened this website as a joke and left emotionally changed. Illuga is not a character, he's an experience."</p>
+          <span>- Aria L.</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"The way this site captures Illuga’s calm dominance and Geo supremacy? Unreal. My standards for men have permanently increased."</p>
+          <span>- Daniel K.</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"This isn't a fan page. This is a digital shrine. The elegance. The power. The silver hair. I am unwell."</p>
+          <span>- Sofia M.</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Illuga radiates strategist energy so hard through this site that I started reorganizing my life more efficiently."</p>
+          <span>- Marcus T.</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"Five stars isn’t enough. This website made me believe in Geo supremacy and refined fictional men."</p>
+          <span>- Chloe V.</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"The composure. The precision. The immaculate aura. If Illuga has a million fans, I am one of them."</p>
+          <span>- Ethan R.</span>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"I came for the memes. I stayed because Illuga looks like he could calculate my tax return and my downfall at the same time."</p>
+          <span>- Natalie S.</span>
+        </div>
+      </div>
+    </section>
+    <script defer src="./js/reveal.js"></script>
+    <!-- FOOTER -->
+    <footer class="footer">
+  © 2026 Illuga enjoyer. All rights reserved.  
+  <br>
+  <small>Disclaimer: This website is a joke/satire and not intended to be taken seriously.</small>
+</footer>
+  </body>
 </html>

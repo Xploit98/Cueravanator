@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Illuga enjoyer</title>
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- Carousel JS (optional simple version) -->
+
+    <!-- Carousel JS -->
     <script defer src="../js/carousel.js"></script>
+
+    <!-- Lightbox JS -->
+    <script defer src="../js/lightbox.js"></script>
   </head>
+
   <body>
+
     <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="logo">Illuga enjoyer</div>
-      <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./heart-click.html">Heart to Heart</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
+    <div id="navbar"></div>
+    <!-- FIXED path (removed leading /) -->
+    <script defer src="../js/loadNavbar.js"></script>
+
     <!-- HERO / CAROUSEL -->
     <section class="gallery-hero">
       <div class="carousel">
         <div class="carousel-track">
           <div class="carousel-slide">
-            <img src="../assets/illugaen.png" alt="Gallery Image 1">
+            <img src="../assets/bending.png" alt="Gallery Image 1">
           </div>
           <div class="carousel-slide">
-            <img src="../assets/illugaen.png" alt="Gallery Image 2">
+            <img src="../assets/pedolluga.png" alt="Gallery Image 2">
           </div>
           <div class="carousel-slide">
-            <img src="../assets/illugaen.png" alt="Gallery Image 3">
+            <img src="../assets/DDRR.png" alt="Gallery Image 3">
           </div>
         </div>
         <button class="carousel-btn prev">&#10094;</button>
         <button class="carousel-btn next">&#10095;</button>
       </div>
     </section>
+
     <!-- GALLERY GRID -->
     <section class="gallery-grid-section">
       <h2 class="section-title">Gallery</h2>
@@ -48,23 +52,43 @@
           <img src="../assets/illugaen.png" alt="Gallery 1">
         </div>
         <div class="gallery-card">
-          <img src="../assets/illugaen.png" alt="Gallery 2">
+          <img src="../assets/bending.png" alt="Gallery 2">
         </div>
         <div class="gallery-card">
-          <img src="../assets/illugaen.png" alt="Gallery 3">
+          <!-- FIXED broken quote here -->
+          <img src="../assets/pedolluga.png" alt="Gallery 3">
         </div>
         <div class="gallery-card">
-          <img src="../assets/illugaen.png" alt="Gallery 4">
+          <img src="../assets/DDRR.png" alt="Gallery 4">
         </div>
         <div class="gallery-card">
-          <img src="../assets/illugaen.png" alt="Gallery 5">
+          <img src="../assets/amogus.png" alt="Gallery 5">
         </div>
         <div class="gallery-card">
           <img src="../assets/illugaen.png" alt="Gallery 6">
         </div>
+        <div class="gallery-card">
+          <img src="../assets/sybau.png" alt="Gallery 7">
+        </div>
+        <div class="gallery-card">
+          <img src="../assets/cry.png" alt="Gallery 8">
+        </div>
+        <div class="gallery-card">
+          <img src="../assets/cross.png" alt="Gallery 9">
       </div>
     </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <div class="lightbox" id="lightbox">
+      <img src="" alt="Full Image" id="lightbox-img">
+    </div>
+
     <!-- FOOTER -->
-    <footer class="footer"> © 2026 Illuga enjoyer. All rights reserved. </footer>
+<footer class="footer">
+  © 2026 Illuga enjoyer. All rights reserved.  
+  <br>
+  <small>Disclaimer: This website is a joke/satire and not intended to be taken seriously.</small>
+</footer>
+
   </body>
 </html>
