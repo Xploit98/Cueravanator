@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "cross.png",
     "bananaolsen.png",
     "MC.png",
-    "baldy.png"
+    "baldy.png",
+    "smugluga.png"
   ];
 
   const galleryGrid = document.getElementById("galleryGrid");
