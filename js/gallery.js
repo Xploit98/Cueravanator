@@ -4,12 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "illugaen.png",
     "bending.png",
     "pedolluga.png",
-    "DDRR.png",
     "amogus.png",
     "sybau.png",
     "cry.png",
-    "cross.png",
-    "bananaolsen.png",
     "MC.png",
     "baldy.png",
     "smugluga.png"
