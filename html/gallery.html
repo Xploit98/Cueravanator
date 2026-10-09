@@ -16,6 +16,8 @@
 
     <!-- Lightbox JS -->
     <script defer src="../js/lightbox.js"></script>
+
+    <script defer src="../js/gallery.js"></script>
   </head>
 
   <body>
@@ -30,6 +32,9 @@
       <div class="carousel">
         <div class="carousel-track">
           <div class="carousel-slide">
+            <img src="../assets/smugluga.png" alt="Gallery Image 1">
+          </div>
+          <div class="carousel-slide">
             <img src="../assets/bending.png" alt="Gallery Image 1">
           </div>
           <div class="carousel-slide">
@@ -37,6 +42,9 @@
           </div>
           <div class="carousel-slide">
             <img src="../assets/DDRR.png" alt="Gallery Image 3">
+          </div>
+                    <div class="carousel-slide">
+            <img src="../assets/MC.png" alt="Gallery Image 4">
           </div>
         </div>
         <button class="carousel-btn prev">&#10094;</button>
@@ -47,38 +55,8 @@
     <!-- GALLERY GRID -->
     <section class="gallery-grid-section">
       <h2 class="section-title">Gallery</h2>
-      <div class="gallery-grid">
-        <div class="gallery-card">
-          <img src="../assets/illugaen.png" alt="Gallery 1">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/bending.png" alt="Gallery 2">
-        </div>
-        <div class="gallery-card">
-          <!-- FIXED broken quote here -->
-          <img src="../assets/pedolluga.png" alt="Gallery 3">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/DDRR.png" alt="Gallery 4">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/amogus.png" alt="Gallery 5">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/illugaen.png" alt="Gallery 6">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/sybau.png" alt="Gallery 7">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/cry.png" alt="Gallery 8">
-        </div>
-        <div class="gallery-card">
-          <img src="../assets/cross.png" alt="Gallery 9">
-      </div>
-          <div class="gallery-card">
-          <img src="../assets/bananaolsen.png" alt="Gallery 10">
-      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
     </section>
 
     <!-- LIGHTBOX MODAL -->
@@ -87,14 +65,19 @@
     </div>
 
     <!-- FOOTER -->
-  <footer class="footer">
-    © 2026 Illuga enjoyer. All rights reserved.  
-    <br>
-    <small>Disclaimer: This website is a joke/satire and not intended to be taken seriously.</small>
-    <br>
-    This website is a parody and intended for entertainment purposes only. 
-    All characters, images, and names are property of their respective owners. 
-    No copyright infringement is intended.
+<footer class="footer">
+    <p>© 2026 Illuga Enjoyer. All rights reserved (mostly).</p>
+    
+    <p><small>
+        This is a non-commercial, fan-made parody website intended for entertainment purposes only. 
+        It is <strong>not affiliated with, endorsed, or sponsored by HoYoverse</strong>. 
+        All characters, images, and names are the intellectual property of HoYoverse.
+    </small></p>
+
+    <p><small>
+        <em>Disclaimer: This content is satire/joke-based and should not be taken seriously. 
+        Usage of assets falls under Fair Use for the purpose of parody and commentary.</em>
+    </small></p>
 </footer>
 
   </body>

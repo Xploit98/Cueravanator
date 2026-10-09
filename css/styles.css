@@ -754,3 +754,14 @@ body {
   transform: scale(1.08);
   box-shadow: 0 15px 40px rgba(255,117,140,0.5);
 }
+
+/* Video Section */
+.video-section-illuga {
+  padding: 60px 8%;
+  text-align: center;
+  background: #D4A25A;
+}
+
+.video-section-illuga .section-title {
+  color: white; /* red accent for titles */
+}
